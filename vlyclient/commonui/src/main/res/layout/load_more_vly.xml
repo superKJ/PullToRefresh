@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px" />-->
+
+    <!--加载中布局-->
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/common_logo_bottom"/>
+
+                <ImageView
+                    android:id="@+id/iv_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/common_logo_bottom_loading"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/up_pull_load"
+                android:textSize="15sp"
+                android:textColor="#999999"
+                android:layout_marginLeft="6dip"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--没有更多数据布局-->
+    <RelativeLayout
+        android:id="@+id/rl_no_more_data"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/common_logo_bottom_line_left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/common_logo_bottom_complete"
+                android:layout_marginLeft="10dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#999999"
+                android:text="@string/no_more_data"
+                android:layout_marginLeft="5dip"/>
+
+            <ImageView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/common_logo_bottom_line_right"
+                android:layout_marginLeft="10dip"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

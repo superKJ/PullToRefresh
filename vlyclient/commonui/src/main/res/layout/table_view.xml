@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_my_height"
+    android:clickable="true"
+    android:background="@drawable/selector_item_white_grey">
+
+    <!-- 左边的图标 -->
+    <ImageView
+        android:id="@+id/iv_left_icon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:scaleType="centerCrop" />
+
+    <!-- 左边的文字 -->
+    <TextView
+        android:id="@+id/tv_left_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@+id/iv_left_icon"
+        android:textColor="@color/color_474747"
+        android:textSize="14dip"/>
+
+    <!-- 最右边的图标 -->
+    <ImageView
+        android:id="@+id/iv_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/arrow_right"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/image_head"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_right_icon"
+        android:layout_marginRight="10dp"/>
+
+
+    <!-- 右边的文字 -->
+    <TextView
+        android:id="@+id/tv_right_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_right_icon"
+        android:layout_toRightOf="@id/tv_left_title"
+        android:textColor="@color/color_474747"
+        android:gravity="right"
+        android:textSize="14dip"
+        android:visibility="gone"/>
+</RelativeLayout>

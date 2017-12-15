@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:layout_gravity="left"
+        android:layout_marginLeft="14dip"
+        android:background="@drawable/selector_item_white_grey"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:scaleType="centerCrop" />
+
+            <EditText
+                android:id="@+id/et_left"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="12dip"
+                android:background="@null"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#2B2B2B"
+                android:textColorHint="#A2A2A2"
+                android:textCursorDrawable="@drawable/shape_color_cursor"
+                android:textSize="16dip" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_right_icon"
+            android:visibility="gone"
+            android:layout_width="46dip"
+            android:layout_height="46dip"
+            android:layout_gravity="center"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_identify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_btn_blue"
+            android:paddingBottom="7dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:visibility="gone"
+            android:paddingTop="7dip"
+            android:text="@string/get_identifying_code_str"
+            android:textColor="@color/white"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/under_line"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:background="@color/color_grey_54d9e0"
+        android:gravity="center"></View>
+</LinearLayout>
